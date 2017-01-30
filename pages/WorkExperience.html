@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<link rel="icon" href="../images/icon.png"/>
+<link rel="stylesheet" type="text/css" href="../style/main.css"/>
+<title>Work Experience</title>
+</head>
+
+<body id="work">
+
+<span id ="head">
+<h1>Spencer W Cousins</h1>
+<h3 id="st">Complete R&eacute;sum&eacute; Project</h3>
+<p id="year">2017</p><br>
+<img src = "../images/icon.jpg" width = 250px><br>
+<h2><a class = "rightLink" href="../index.html">Education and Certificates</a>
+<h2><a class = "rightLink" href="ref.html">References</a></h2>
+<h2><a class = "rightLink" href="AddSkill.html">Additional Skills</a></h2>
+</span>
+
+<h2>Work Experience</h2><br>
+
+<ul id="workList">
+<div id="Employers">
+<h3 id="worklist" class="heading" data-panelid="programming">Programming and IT</h3><br>
+<li class="programming">Freelance Coder</li>
+<ul><li class="programming">Website Design</li>
+<ul><li class="programming">HTML 5</li>
+<li class="programming">CSS 3</li>
+<li class="programming">Javascript</li>
+<ul><li class="programming">jQuery 3.1</li></ul>
+</ul>
+<li class="programming">iPhone and iPad app Development</li>
+<ul><li class="programming">Swift 3</li>
+<li class="programming">xCode 8.x</li>
+</ul>
+</ul>
+
+<br><h3 class="heading" data-panelid="sales">Business Development and Sales Leadership</h3><br>
+
+
+<li class ="sales"><b>What's Saponin</b></li>
+<ul><li class="sales" id="exp">Participated in the Development of a New Business Model from the Ground Up</li>
+<li class="sales" id="exp">Design and Procurement of Packaging and Marketing Materials</li>
+<li class="sales" id="exp">Instrumental in the Launch of eCommerce Website</li></ul>
+<li class ="sales"><b>Blue Raven Solar</b></li>
+<ul><li class="sales" id="exp">Provided Exceptional Customer Experience</li>
+<li class="sales" id="exp">Promoted to Area Manager Quickly</li></ul>
+<li class ="sales"><b>Chains 2 Charms</b></li>
+<ul><li class="sales" id="exp">Drove Sales for New Business</li>
+<li class="sales" id="exp">Created New Business Opportunity from Adversity<li></ul>
+<li class ="sales"><b>Cricket Mobile</b></li>
+<ul><li class="sales" id="exp">Top Sales in Region 8 consecutive weeks</li>
+<li class="sales" id="exp">Brought Low Sales Location up to Quota</li></ul>
+<li class ="sales"><b>TD Promotions</b></li>
+<ul><li class="sales" id="exp">Drove Sales by Promotional Events for New Products</li>
+<li class ="sales" id="exp">Management Training Program</li></ul>
+
+
+<br><h3 class="heading" data-panelid="handyman">General Handyman</h3><br>
+<li class="handyman">Hotel Santa Fe</li>
+<li class="handyman">Handyman</li>
+
+<br><h3 class="heading" data-panelid="locksmith">Locksmith</h3><br>
+<li class="locksmith">CNM Lock Shop</li>
+<li class="locksmith">Sandia Safe and Lock</li>
+<li class="locksmith">Lumber Inc.</li>
+
+<br><h3 class="heading" data-panelid="kitchen">Kitchen</h3><br>
+<li class="kitchen">Capo's Italiano</li>
+<li class="kitchen">Nana's Pizzaria</li>
+<li class="kitchen">Ragin' Shrimp</li>
+
+<br><h3 class="heading" data-panelid="mover">Logistics</h3>
+<li class="mover">Truckless Movers</li>
+<br>
+</ul>
+
+<script src= "jquery.js"></script>
+
+<script>
+
+$(function() {
+
+$("li").hide();
+
+
+
+$("h3").on('click', function() {
+	var panelId = $(this).attr('data-panelid')
+	$("." + panelId).toggle(125);
+	});
+	
+$("li").mouseover (function() {
+	$(this).css("font-size","1.33em");
+	$(this).css("text-shadow", "0 0 1em lightsteelblue")
+	});
+$("li").mouseleave (function() {
+	$(this).css("font-size","1em");
+	$( this ).css( "text-shadow", "none" );
+	});
+	
+$(".heading").mouseover (function() {
+	$(this).css("text-shadow", "0 0 2em lightsteelblue").fadeIn();
+	});
+	
+$(".heading").mouseleave (function() {
+    $( this ).css( "text-shadow", "none" );
+  });
+  
+$(".rightLink").mouseover (function() {
+	$(this).css("opacity", "73").fadeIn(125, 125);
+	});
+$(".rightLink").mouseover (function() {
+	$(this).css("text-shadow", "0 0 1em lightsteelblue").fadeIn();
+	});
+$(".rightLink").mouseleave (function() {
+    $( this ).css( "text-shadow", "none" );
+  });
+$(".rightLink").mouseleave (function() {
+    $( this ).css( "opacity", "0.3" );
+  });
+
+
+
+
+});
+
+</script>
+
+</body>
+
+<footer>
+<small><sub>Spencer W Cousins 2016 &copy;</sub></small>
+</footer>
+
+
+</html>

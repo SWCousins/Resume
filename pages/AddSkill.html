@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<link rel="icon" href="../images/icon.png"/>
+<link rel="stylesheet" type="text/css" href="../style/main.css"/>
+<title>Additional Skills</title>
+<style>
+ul {list-style-position:inside;}
+</style>
+</head>
+
+<body id="addSkill">
+
+<span id ="head">
+<h1>Spencer W Cousins</h1>
+<h3 id="st">Complete R&eacute;sum&eacute; Project</h3>
+<p id="year">2017</p><br>
+<img src = "../images/icon.jpg" width = 250px><br>
+<h2><a class = "rightLink" href="../index.html">Education and Certificates</a>
+<h2><a class = "rightLink" href="ref.html">References</a></h2>
+<h2><a class = "rightLink" href="WorkExperience.html">Work Experience</a></h2>
+</span>
+
+<span class = "book">
+<h2 id="addTitle">Additional Skills</h2>
+
+
+<br><h3 class="heading" data-panelid="audit">Audited Courses</h3>
+<ul>
+<li class="audit">University of California Ivine, <br> <p id ="addTitle">The Raspberry Pi Platform and Python Programming for the Raspberry Pi</li></p>
+<hr class = "hide audit" width="67%"><li class="audit">DePaul University Visiting Artist Series: <br> <p id ="addTitle">David McDonnell, Focus on: Max/MSP Strategies in Computer Generated Music</li></p>
+<hr class = "hide audit" width="67%"><li class="audit">Copenhagen Business School, <br> <p id ="addTitle">Strategic Management</li>
+<hr class = "hide audit" width="67%"><li class="audit">Yale University, <br> <p id ="addTitle">A Law Student's Toolbox</li>
+<hr class = "hide audit" width="67%"><li class="audit">University of Pennsylvania Wharton, <br> <p id ="addTitle">Introduction to Operations Management</li>
+<hr class = "hide audit" width="67%"><li class="audit">University of Pennsylvania Wharton, <br> <p id ="addTitle">Entrepreneurship I, II</li>
+<hr class = "hide audit" width="67%"><li class="audit">University of Geneva, <br> <p id ="addTitle">Understanding Financial Markets</li>
+</ul><br>
+
+<h3 class="heading" data-panelid="projects">Projects</h3>
+<ul>
+<li class="projects" data-panelid="games">Custom 2048 games</li><span class="projects br"></span>
+<ul><li class="games"><embed src="../pages/2048/index.html" height = 800 width = 600></li></ul>
+<li class="projects" data-panelid="ship">Earthship Monitoring System</li><span class="projects br"></span>
+<ul><li class="ship">
+<sub>Pre-Alpha conceptual design to adapt open source LCARS Home Monitoring/Automation
+System into embedded Earthship computer panel with Optional Voice Control</sub><br class = "hide ship">
+<embed src="../images/LCARS.jpeg" height = 300 width = 300><embed src="../images/earthship.jpeg" 
+height = 200 width = 400>
+
+</ul>
+<li class="projects">iOS App</li><span class="projects br"></span>
+<li class="projects" data-panelid="code">Samples of Code</li><span class="projects br"></span>
+
+<span class="hide code" style="float:center">
+<ul>
+<br>C program<br>
+
+<kbd>#include <stdio.h></kbd><br>
+<br>
+<kbd>int main(void) {<kbd><br>
+<br>
+	<kbd>printf("Hello, world");</kbd><br>
+	<kbd>return 0;<kbd><br>
+}<br>
+
+</ul> 
+<p>My first program, written in C</p>
+</span>
+
+</ul><br>
+
+<h3 class="heading" data-panelid="volunteer">Volunteer Experience</h3>
+<ul>
+<li class="volunteer">Organization of Canned Food Drive</li>
+<li class="volunteer">Head of Phone Bank at Environment New Mexico</li>
+<li class="volunteer">Volunteer at Project Share</li>
+</ul><br>
+
+<h3 class="heading" data-panelid="music">Musician Experience</h3>
+<ul>
+<li class="music">Guitar, 10+ Years</li>
+<li class="music">Hand Drums, Djimbe 4 Years</li>
+<li class="music">Piano, 3 Years</li>
+<li class="music">Bass, 3 Years</li>
+</ul>
+<br>
+</span>
+
+<script src= "jquery.js"></script>
+
+<script>
+
+$(function() {
+
+$("li").hide();
+$(".games").hide();
+$(".hide").hide();
+
+
+
+
+$(".heading").on('click', function() {
+	var panelId = $(this).attr('data-panelid')
+	$("." + panelId).toggle(165);
+	});
+$("li").on('click', function() {
+	var panelId = $(this).attr('data-panelid')
+	$("." + panelId).toggle(165);
+	});
+	
+$("li").mouseover (function() {
+	$(this).css("font-size","1.15em");
+	});
+$("li").mouseleave (function() {
+	$(this).css("font-size","1em");
+	});
+$("li").mouseover (function() {
+	$(this).css("text-shadow", "0 0 1.25em lightsteelblue");
+	});
+	
+$("li").mouseleave (function() {
+    $( this ).css( "text-shadow", "none" );
+  });
+	
+$(".heading").mouseover (function() {
+	$(this).css("text-shadow", "0 0 1em wheat");
+	});
+	
+$(".heading").mouseleave (function() {
+    $( this ).css( "text-shadow", "none" );
+  });
+  
+$(".rightLink").mouseover (function() {
+	$(this).css("opacity", "73").fadeIn(125, 125);
+	});
+$(".rightLink").mouseover (function() {
+	$(this).css("text-shadow", "0 0 1em lightsteelblue").fadeIn();
+	});
+$(".rightLink").mouseleave (function() {
+    $( this ).css( "text-shadow", "none" );
+  });
+$(".rightLink").mouseleave (function() {
+    $( this ).css( "opacity", "0.3" );
+  });
+
+
+
+});
+
+</script>
+
+
+</body>
+
+
+<footer>
+<small><sub>Spencer W Cousins 2016 &copy;</sub></small>
+</footer>
+
+
+
+
+</html>
