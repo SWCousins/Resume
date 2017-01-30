@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<link rel="icon" href="images/icon.png"/>
+<link rel="stylesheet" type="text/css" href="style/main.css"/>
+<title>Spencer W Cousins</title>
+<style>
+table, th, td {
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<span id ="head">
+<h1>Spencer W Cousins</h1>
+<h3 id="st">Complete R&eacute;sum&eacute; Project</h3>
+<p id="year">2017</p><br>
+<img src = "images/icon.jpg" width = 250px><br>
+<h2><a class = "rightLink" href="pages/ref.html">References</a></h2>
+<h2><a class = "rightLink" href="pages/WorkExperience.html">Work Experience</a></h2>
+<h2><a class = "rightLink" href="pages/AddSkill.html">Additional Skills</a></h2>
+</span><br>
+
+<div id="main">
+<h2 id="eduCert">Education and Certificates</h2>
+
+<div id = "subjects"><ul>
+<li><b>Computer Science and Information Technology</b></li><br>
+
+	<table class="indent">
+	<th>Credential</th><th>School</th>
+	<tr>
+	<ul>
+	<td><li id="edu">Diploma in Information Technology Management</li></td>
+	<td><a href="http://www.uga.edu/about_uga/profile/global-text-project/">Global Text Project</a></td>
+	</tr>
+	<td><li id="edu">Diploma in C Programming</li></td>
+	<td><a href="http://www.advancelearning.com/">Advance Learning</a></td>
+	</tr>
+	<td><li id="certs">Introduction to Computer Science</li></td>
+	<td><a href="http://www.harvard.edu">Harvard University</a></td>
+	</tr>
+	<td><li id="certs"><a href="pages/foundationsCert.html"/>Foundations of Programming: Fundamentals</a></li></td>
+	<td><a href="http://www.lynda.com">Lynda.com</a></td>
+	</tr>
+	<td><li id="certs"><a href="pages/ArduinoCert.html">Up and Running with Arduino</a></link></li></td>
+	<td><a href="http://www.lynda.com">Lynda.com</a></td></tr>
+</ul>
+</tr>
+
+</table>
+
+<br>
+
+<li class="indent"><b>College Education</b></li>
+<table class="indent">
+	<tr><td>
+	<ul id = "edu">
+	<li><a href="images/unoffTran.jpg">111 credit hours</a></li></td> <!--University of New Mexico-->
+	</ul>
+	<td><a href="http://www.unm.edu">University of New Mexico</a></td></tr>
+	
+	
+	
+	</table>
+	<br>
+	
+<li><b>Business and Professional</b></li>
+	<ul id = "certs">
+	<li>Executive Leadership</li> <!--Project Management Institute-->
+	<li>Developing Executive Presence</li><!--Lynda.com-->
+	<li><a href="pages/Wharton.html">Accounting Certificate</a></li> <!--University of Pennsylvania, Wharton-->
+	</ul><br>
+	
+<li><b>Marketing and Media</b></li>
+	<ul id = "certs">
+	<li><a href="pages/Wharton.html">Certificate in Marketing</a></li> <!--University of Pennsylvania, Wharton-->
+	<li><a href="pages/Wharton.html">Certificate in Viral Marketing</a></li> <!--University of Pennsylvania, Wharton-->
+	<li>Facebook Advertising Fundamentals</li>
+	<li>Creating a Short Film: 01 Producing</li>
+	</ul><br>
+	
+<li><b>Vocational Training</b></li>
+	<ul id="certs">
+	<li>Introduction to Electrical Wiring Systems</li>
+	<li id="edu"><a href = "pages/Locksmith.html">Certified Locksmith</a></li><!--San Francisco Locksmith School-->
+	<li>Cabinetmaking I</li> <!--CNM-->
+	<li>Welding Skills I</li> <!--CNM-->
+	<li>Machine Tool Skills I</li> <!--CNM-->
+	</ul><br>
+
+<li><b>High School Diploma</b></li>
+<ul><table class="indent">
+	
+	<tr><td>
+	<li id = "edu">Diploma with Proficient Portfolio</li></td>
+	<td><a href="http://cibola.aps.edu/">Cibola High School</a></td></tr>
+	</table></ul></div>
+<!--
+</ul>
+<p id = "schools">
+<br>
+<a href="http://www.uga.edu/about_uga/profile/global-text-project/">Global Text Project</a><br>
+<a href="http://www.advancelearning.com/">Advance Learning</a><br>
+<a href="http://www.harvard.edu">Harvard University</a><br>
+<a href="http://www.lynda.com">Lynda.com</a><br>
+<a href="http://www.lynda.com">Lynda.com</a><br>
+<br><br>
+
+<br><br><br>
+<a href="http://www.pmi.org/">Project Management Institute</a><br>
+<a href="http://www.lynda.com">Lynda.com</a><br>
+<a href="https://www.coursera.org/penn">University of Pennsylvania, Wharton School</a><br>
+<br><br>
+<div id="comp">
+<a href="https://www.coursera.org/penn">University of Pennsylvania, Wharton School</a><br>
+<a href="https://www.coursera.org/penn">University of Pennsylvania, Wharton School</a><br>
+<a href="http://www.lynda.com">Lynda.com</a><br>
+<a href="http://www.lynda.com">Lynda.com</a><br>
+</div>
+<br><br>
+US AID<br>
+<a href="http://www.cassidylocksmith.com/">San Francisco Locksmith School</a><br>
+<a href="http://www.cnm.edu">CNM Community College</a><br>
+<a href="http://www.cnm.edu">CNM Community College</a><br>
+<a href="http://www.cnm.edu">CNM Community College</a><br>
+<br><br>
+<br>
+</p>
+-->
+
+</div>
+
+<script src= "pages/jquery.js"></script>
+
+<script>
+
+$(function() {
+
+$(".rightLink").mouseover (function() {
+	$(this).css("opacity", "73").fadeIn(125, 125);
+	});
+		
+$(".rightLink").mouseover (function() {
+	$(this).css("text-shadow", "0 0 1em lightsteelblue").fadeIn();
+	});
+	
+$(".rightLink").mouseleave (function() {
+    $( this ).css( "text-shadow", "none" );
+  });
+  
+$(".rightLink").mouseleave (function() {
+    $( this ).css( "opacity", "0.3" );
+  });
+
+});
+
+</script>
+<br>
+</body>
+
+
+
+<footer>
+<small><sub>Spencer W Cousins 2016 &copy;</sub></small>
+</footer>
+
+</html>
