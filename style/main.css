@@ -1,0 +1,193 @@
+
+
+h1 {
+text-align : right;
+color : RebeccaPurple;
+buffer : 0;
+}
+
+.rightLink {
+color : lightcyan;
+background : url(../images/blackWood.jpeg);
+opacity : 0.3;
+}
+
+
+#st {
+text-align : right;
+color : teal
+}
+
+#year {
+color : white;
+text-align : right;
+}
+
+#head {
+float : right;
+background : url(../images/blackWood.jpeg);
+padding : 25px 25px 25px 25px;
+}
+
+#main {
+float : left;
+}
+
+#refTitle {
+text-indent: 50px;
+}
+
+#addTitle {
+text-indent : 90px;
+}
+
+.book {
+text-indent : 130px;
+}
+
+
+#comp {
+    vertical-align:25px;
+}
+
+#alyssa {
+background : linen;
+}
+#tysh {
+background : lightsteelblue;
+}
+
+#lacy {
+background : lavender;
+}
+
+#lucy {
+background : thistle;
+margin-top : 10px;
+margin-bottom : 10px;
+margin-right : 10px;
+margin-left : 10px;
+}
+#refPic {
+padding : 25px 25px 25px 25px;
+float : left;
+}
+#bioInfo {
+float : left;
+padding : 30px 25px 0px 25px;
+}
+#name {
+padding : 65px 10px 0px 10px;
+}
+#refP {
+max-width : 300px;
+}
+#refContent {
+float : left;
+outline : ridge;
+}
+
+a {
+color : black;
+text-decoration : none;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:38px;
+   width:100%;
+background : url(../style/rain.gif);
+text-align : center;
+color : dodgerblue;
+opacity : 0.53;
+}
+
+body {
+background : url(../images/goldV.jpeg);
+background-repeat: no-repeat;
+background-size : cover;
+}
+
+#main {
+background : url(../images/oldPaper.png);
+opacity: 0.78;
+}
+
+#Employers {
+font-family: Copperplate / Copperplate Gothic Light, sans-serif;
+}
+
+#work {
+background : url(../images/steel.jpeg);
+background-repeat: no-repeat;
+background-size : cover;
+}
+
+#addSkill {
+background : url(../images/letterHead.jpeg);
+background-repeat: no-repeat;
+background-size : cover;
+}
+
+#workList {
+list-style-image : url(../images/work.png);
+}
+
+#exp {
+list-style-image : url(../images/checkBox.png);
+}
+
+.programming {
+list-style-image : url(../images/keyboard1.png);
+}
+
+.heading {
+cursor : pointer;
+}
+
+.projects {
+cursor : pointer;
+}
+
+#edu {
+list-style-image : url(../images/edu15.png);
+}
+
+#certs {
+list-style-image : url(../images/Cert.png);
+}
+
+#eduCert {
+text-indent : 30px;
+}
+
+.indent {
+text-indent : 30px;
+}
+
+#schools {
+float : left;
+list-style : none;
+padding : 6px 0px 0px 20px;
+}
+
+#subjects {
+float : left;
+}
+
+#ref {
+background : url(../images/sky.jpg);
+background-repeat: no-repeat;
+background-size : cover;
+}
+
+#references {
+list-style-image : url(../images/person.png);
+}
+
+.audit {
+cursor : default;
+}
+
