@@ -1,9 +1,14 @@
 
+html, body {
+margin:0;
+padding:0;
+}
 
 h1 {
-text-align : right;
 color : RebeccaPurple;
 buffer : 0;
+padding:0;
+margin:0;
 }
 
 .rightLink {
@@ -12,25 +17,70 @@ background : url(../images/blackWood.jpeg);
 opacity : 0.3;
 }
 
-
 #st {
-text-align : right;
 color : teal
 }
 
 #year {
 color : white;
 text-align : right;
+padding : 0px 0px 7px 0px;
+}
+
+#titleed {
+text-align : right;
+padding: 3px 315px 0px 0px;
+background:url(../images/goodMorning.gif);
+background-repeat: no-repeat;
+background-size : cover;
+position : static;
+left:0px;
+top:0px;
+opacity : 0.78;
+box-shadow: 0px 0px 5px 0px;
+}
+
+#titlewo {
+text-align : right;
+padding: 3px 315px 0px 0px;
+background:url(../images/console.gif);
+position : static;
+left:0px;
+top:0px;
+opacity : 0.66;
+box-shadow: 0px 0px 5px 0px;
+}
+
+#title {
+text-align : right;
+padding: 3px 315px 0px 0px;
+background:url(../images/shootingStar.gif);
+position : static;
+left:0px;
+top:0px;
+opacity : 0.78;
+box-shadow: 0px 0px 5px 0px;
 }
 
 #head {
-float : right;
 background : url(../images/blackWood.jpeg);
-padding : 25px 25px 25px 25px;
+background-repeat: no-repeat;
+background-size : cover;
+padding : 25px 15px 25px 15px;
+position:fixed;
+top:0px;
+right:0px;
+height: 100%;
+z-index:99;
+}
+
+#icon {
+border-radius: 25px;
 }
 
 #main {
-float : left;
+float:left;
+margin: 10px;
 }
 
 #refTitle {
@@ -96,15 +146,16 @@ footer {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:38px;
+   height:33px;
    width:100%;
 background : url(../style/rain.gif);
 text-align : center;
 color : dodgerblue;
 opacity : 0.53;
+z-index:100;
 }
 
-body {
+.body {
 background : url(../images/goldV.jpeg);
 background-repeat: no-repeat;
 background-size : cover;
@@ -168,13 +219,11 @@ text-indent : 30px;
 }
 
 #schools {
-float : left;
 list-style : none;
 padding : 6px 0px 0px 20px;
 }
 
 #subjects {
-float : left;
 }
 
 #ref {
@@ -190,4 +239,5 @@ list-style-image : url(../images/person.png);
 .audit {
 cursor : default;
 }
+
 
