@@ -27,6 +27,19 @@ text-align : right;
 padding : 0px 0px 7px 0px;
 }
 
+#titlead {
+text-align : right;
+padding: 3px 315px 0px 0px;
+background:url(../images/goatTakedown.gif);
+background-repeat: no-repeat;
+background-size : cover;
+position : static;
+left:0px;
+top:0px;
+opacity : 0.71;
+box-shadow: 0px 0px 5px 0px;
+}
+
 #titleed {
 text-align : right;
 padding: 3px 315px 0px 0px;
@@ -239,5 +252,4 @@ list-style-image : url(../images/person.png);
 .audit {
 cursor : default;
 }
-
 
