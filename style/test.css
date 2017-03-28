@@ -1,0 +1,24 @@
+
+.pause {
+color:white;
+text-align:right;
+background: red;
+background-repeat: no-repeat;
+background-size : cover;
+}
+
+.play {
+color:white;
+text-align:right;
+background: green;
+background-repeat: no-repeat;
+background-size : cover;
+}
+
+.rightLink {
+color:black;
+text-align:right;
+background: green;
+background-repeat: no-repeat;
+background-size : cover;
+}
