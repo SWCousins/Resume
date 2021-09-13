@@ -2,45 +2,47 @@
 
 <html>
 <head>
-<link rel="icon" href="images/icon.png"/>
-<link rel="stylesheet" type="text/css" href="style/main.css"/>
-<title>Spencer W Cousins</title>
-<style>
-table, th, td {
-    padding: 10px;
-}
+    <link rel="icon" href="images/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="style/main.css"/>
+    <title>Spencer W Cousins</title>
+    
+    <style>
+        table, th, td {
+            padding: 10px;
+        }
 
-</style>
+    </style>
 </head>
 
 <body class="body">
+    <!--Navbar-->
+    <nav id ="navbar">
+        <img id = "icon" src = "images/icon.png">
+        <a class = "nav-link" href="pages/ref.html">References</a>
+        <a class = "nav-link" href="pages/WorkExperience.html">Work Experience</a>
+        <a class = "nav-link" href="pages/AddSkill.html">Additional Skills</a>
+    </nav><br>
+    <div id="titleed">
+        <h1 id="name">Spencer W Cousins</h1>
+        <h3 id="project">Complete R&eacute;sum&eacute; Project</h3>
+        <p id="year">2021</p>
+    </div>
 
-<div id="titleed">
-<h1>Spencer W Cousins</h1>
-<h3 id="st">Complete R&eacute;sum&eacute; Project</h3>
-<p id="year">2017</p>
-</div>
 
-<nav id ="head">
-<img id = "icon" src = "images/icon.jpg" width = 250px><br>
-<h2><a class = "rightLink" href="pages/ref.html">References</a></h2>
-<h2><a class = "rightLink" href="pages/WorkExperience.html">Work Experience</a></h2>
-<h2><a class = "rightLink" href="pages/AddSkill.html">Additional Skills</a></h2>
-</nav><br>
+    <div id="main">
+        <h2 class="eduCert">Education and Certificates</h2>
 
-<div id="main">
-<h2 id="eduCert">Education and Certificates</h2>
+        <div id = "subjects">
+            <ul>
+            <li><b>Computer Science and Information Technology</b></li><br>
 
-<div id = "subjects"><ul>
-<li><b>Computer Science and Information Technology</b></li><br>
-
-	<table class="indent">
-	<th>Credential</th><th>School</th>
-	<tr>
-	<ul>
-	<td><li id="edu">Diploma in Information Technology Management</li></td>
-	<td><a href="http://www.uga.edu/about_uga/profile/global-text-project/">Global Text Project</a></td>
-	</tr>
+	   <table class="indent">
+	   <th>Credential</th><th>School</th>
+	   <tr>
+	       <ul>
+               <td><li id="edu">Diploma in Information Technology Management</li></td>
+               <td><a href="http://www.uga.edu/about_uga/profile/global-text-project/">Global Text Project</a></td>
+               </tr>
 	<td><li id="edu">Diploma in C Programming</li></td>
 	<td><a href="http://www.advancelearning.com/">Advance Learning</a></td>
 	</tr>
@@ -53,7 +55,7 @@ table, th, td {
 	<td><li id="certs"><a href="pages/ArduinoCert.html">Up and Running with Arduino</a></link></li></td>
 	<td><a href="http://www.lynda.com">Lynda.com</a></td>
 	</tr>	
-</ul>
+    </ul>
 </tr>
 </table>
 <h4 style="text-align:center">Pluralsight Skill Rating:</h4>
@@ -178,21 +180,22 @@ US AID<br>
 
 $(function() {
 
-$(".rightLink").mouseover (function() {
-	$(this).css("opacity", "73").fadeIn(125, 125);
-	});
+    $(".nav-link").mouseover (function() {
+	    $(this).css("opacity", "73").fadeIn(125, 125);
+        $(this).css("text-shadow", "0 0 1em lightsteelblue").fadeIn();
+    });
 		
-$(".rightLink").mouseover (function() {
-	$(this).css("text-shadow", "0 0 1em lightsteelblue").fadeIn();
-	});
-	
-$(".rightLink").mouseleave (function() {
-    $( this ).css( "text-shadow", "none" );
-  });
-  
-$(".rightLink").mouseleave (function() {
-    $( this ).css( "opacity", "0.3" );
-  });
+
+    $(".nav-link").mouseleave (function() {
+        $( this ).css( "text-shadow", "none" );
+        $( this ).css( "opacity", "0.3" );
+    });
+
+    
+    $(".eduCert").mouseover(function(e) {
+        $("#subjects").css("visibility", "visible");
+        $("#main").css("height", "auto");
+    });
 
 });
 

@@ -5,26 +5,19 @@ padding:0;
 }
 
 h1 {
-color : RebeccaPurple;
-buffer : 0;
+color : black;
 padding:0;
 margin:0;
 }
 
-.rightLink {
+.nav-link {
 color : lightcyan;
-background : url(../images/blackWood.jpeg);
+background : url(../images/console.gif);
 opacity : 0.3;
-}
-
-#st {
-color : teal
-}
-
-#year {
-color : white;
-text-align : right;
-padding : 0px 0px 7px 0px;
+    font-size: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
 }
 
 #titlead {
@@ -41,16 +34,21 @@ box-shadow: 0px 0px 5px 0px;
 }
 
 #titleed {
-text-align : right;
-padding: 3px 315px 0px 0px;
-background:url(../images/goodMorning.gif);
-background-repeat: no-repeat;
-background-size : cover;
+text-align : center;
+    background:  #aaa;
 position : static;
-left:0px;
-top:0px;
+    margin-left: 1rem;
+left:0rem;
+top:0rem;
+    width: 42rem;
 opacity : 0.78;
+    border-radius: 2rem;
 box-shadow: 0px 0px 5px 0px;
+    
+}
+
+#titleed#year {
+    margin-left: 2rem;
 }
 
 #titlewo {
@@ -75,20 +73,22 @@ opacity : 0.78;
 box-shadow: 0px 0px 5px 0px;
 }
 
-#head {
+#navbar {
 background : url(../images/blackWood.jpeg);
 background-repeat: no-repeat;
-background-size : cover;
+background-size :cover;
 padding : 25px 15px 25px 15px;
-position:fixed;
+position:relative;
+    display: block;
 top:0px;
-right:0px;
-height: 100%;
+height: 3rem;
 z-index:99;
 }
 
 #icon {
 border-radius: 25px;
+    height: 4rem;
+    width: 4rem;
 }
 
 #main {
@@ -159,24 +159,27 @@ footer {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:33px;
+   height:1.3rem;
    width:100%;
 background : url(../style/rain.gif);
 text-align : center;
-color : dodgerblue;
-opacity : 0.53;
+color : black;
+opacity : 0.33;
 z-index:100;
 }
 
 .body {
-background : url(../images/goldV.jpeg);
+background : #555;
 background-repeat: no-repeat;
 background-size : cover;
 }
 
 #main {
-background : url(../images/oldPaper.png);
+background : #bbb;
 opacity: 0.78;
+    border-radius: 1rem;
+    width: 67rem;
+    height: 4rem;
 }
 
 #Employers {
@@ -223,7 +226,7 @@ list-style-image : url(../images/edu15.png);
 list-style-image : url(../images/Cert.png);
 }
 
-#eduCert {
+.eduCert {
 text-indent : 30px;
 }
 
@@ -237,6 +240,7 @@ padding : 6px 0px 0px 20px;
 }
 
 #subjects {
+    visibility:hidden;
 }
 
 #ref {
